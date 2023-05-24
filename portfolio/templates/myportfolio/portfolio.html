@@ -1,0 +1,186 @@
+{% extends 'myportfolio/home.html' %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+/* ////........Navbar.......//// */
+
+.menu-items a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+
+/* ////........Home Content........//// */
+
+
+/* ////........About Me........//// */
+
+
+/* ///.....Skill Bar....../// */
+
+
+/* ////.....Portfolio......///// */
+
+.proj-1 .proj1-details button .fas {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  transition: 0.2s ease-in-out;
+}
+
+.proj-1 .proj1-details button:hover {
+  background: #c06c84;
+}
+
+.proj-1 .proj1-details button:hover a,
+.proj-1 .proj1-details button:hover .fas {
+  color: #f0f0e6;
+}
+
+/* ////.....proj2.....//// */
+
+.proj-2 .proj2-details button .fas {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  transition: 0.2s ease-in-out;
+}
+
+.proj-2 .proj2-details button:hover {
+  background: #c06c84;
+}
+
+.proj-2 .proj2-details button:hover a,
+.proj-2 .proj2-details button:hover .fas {
+  color: #f0f0e6;
+}
+
+.more-work a:hover {
+  border-bottom: 2px solid #f0f0e6;
+}
+
+/* ////......Contact......///// */
+
+
+/* ////......Media query......//// */
+
+  </style>
+
+  <title>Portfolio</title>
+</head>
+<body>
+{% block body_block %}
+  <!-- PROJECTS PAGE -->
+  <section id="my-works">
+    <div class="portfolio" style="background: #f67280; padding: 6rem 0;">
+      <div class="proj-heading">
+        <h1 style="text-align: center; color: #c06c84; font-size: 2.3rem; font-weight: 700; margin: 3rem 0;">Portfolio</h1>
+      </div>
+      <div class="portfolio-content container">
+        <div class="proj-1" style="display: flex; justify-content: center; align-items: center;">
+          <!--<img src="" style="height: 330px; width: 380px; object-fit: cover; border-radius: 50%; box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%); margin-right: 1.7rem;">-->
+          <div class="proj1-details" style="width: 32rem;">
+            <i class="fab fa-html5" style="font-size: 1.5rem; color: #c06c84;"></i>
+            <i class="fab fa-css3-alt" style="font-size: 1.5rem; color: #c06c84;"></i>
+            <i class="fab fa-js" style="font-size: 1.5rem; color: #c06c84;"></i>
+            <h2 style="font-size: 2rem; color: #c06c84;">Real Time Chat Application</h2>
+            <p style="font-size: 1.3rem; color: #c06c84; font-weight: 600;"></p>
+            <button style="background: #f0f0e6; padding: 0.5rem; margin-top: 0.5rem; width: 150px; border: none; border-bottom: 2px solid #c06c84;"><a href="#" target="blank" style="text-decoration: none; color: #c06c84; font-size: 1.1rem; transition: 0.2s ease-in-out; text-align: center; transition: 0.3s ease-in-out;">GitHub Link<i class="fas fa-external-link-alt"></i></a>
+            </button>
+            <!--<button style="background: #f0f0e6; padding: 0.5rem; margin-top: 0.5rem; width: 150px; border: none; border-bottom: 2px solid #07374a;"><a href="#" target="blank" style="text-decoration: none; color: #07374a; font-size: 1.1rem; transition: 0.2s ease-in-out; text-align: center; transition: 0.3s ease-in-out;">Try it Live <i class="fas fa-external-link-alt"></i></a>
+            </button>-->
+          </div>
+        </div>
+
+        <div class="proj-2" style="display: flex; justify-content: center; align-items: center; margin-top: 3rem;">
+          <!--<img src="https://cdn-icons-png.flaticon.com/512/4785/4785872.png" style="height: 330px; width: 380px; object-fit: cover; border-radius: 50%; box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%); margin-right: 1.7rem;">-->
+          <div class="proj2-details" style="width: 32rem;">
+            <i class="fab fa-html5" style="font-size: 1.5rem; color: #c06c84;"></i>
+            <i class="fab fa-css3-alt" style="font-size: 1.5rem; color: #c06c84;"></i>
+            <h2 style="font-size: 2rem; color: #c06c84;">Real Time Food Safety</h2>
+            <p style="font-size: 1.3rem; color: #c06c84; font-weight: 600;">College Project</p>
+            <button style="background: #f0f0e6; padding: 0.5rem; margin-top: 0.5rem; width: 150px; border: none; border-bottom: 2px solid #c06c84;"><a href="#" target="blank" style="text-decoration: none; color: #c06c84; font-size: 1.1rem; transition: 0.2s ease-in-out; text-align: center; transition: 0.3s ease-in-out;">GitHub Link<i class="fas fa-external-link-alt"></i></a>
+            </button>
+            <!--<button style="background: #f0f0e6; padding: 0.5rem; margin-top: 0.5rem; width: 150px; border: none; border-bottom: 2px solid #07374a;"><a href="#" target="blank" style="text-decoration: none; color: #07374a; font-size: 1.1rem; transition: 0.2s ease-in-out; text-align: center; transition: 0.3s ease-in-out;">Try it Live <i class="fas fa-external-link-alt"></i></a>
+            </button>-->
+          </div>
+
+        </div>
+        <!--<div class="more-work" style="text-align: center; margin: 3rem 0 1rem 0;">
+          <p style="font-size: 1.6rem; color: #07374a; font-weight: 500;">
+            More
+          </p>
+          <a href="#" target="blank" style="text-decoration: none; color: #f0f0e6; font-size: 1.3rem;">CodePen</a>
+        </div>-->
+      </div>
+    </div>
+  </section>  {% endblock %}
+
+    <!-- JAVASCRIPT -->
+  <!--  <script src="home.js"></script>  -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+    $(window).scroll(function () {
+        // checks if window is scrolled more than 500px, adds/removes solid class
+        if ($(this).scrollTop() > 550) {
+            $('.navbar').addClass('solid');
+            $('.back-to-top').addClass('visible');
+        } else {
+            $('.navbar').removeClass('solid');
+            $('.back-to-top').removeClass('visible');
+        }
+
+      });
+    });
+
+
+$(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+});
+  </script>
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+</body>
+</html>
